@@ -20,7 +20,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '8286349224:AAFTiyfmo3udUoCTlElwgVw3YZfY14U
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7123837674').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/BruceJaat")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002881534182'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+xn7pNT5vdVU1YWQ1')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002838928244').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Yashds:Yashds@yashds.ttyep08.mongodb.net/?retryWrites=true&w=majority&appName=Yashds")
 
@@ -35,7 +35,7 @@ URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001949498981'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', 0))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Movie_Url_link_downloader/17")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "5bb6e402dd86fb8774690a5f4a65d2a2c0c04877")
@@ -53,7 +53,7 @@ YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
-auth_channel = environ.get('AUTH_CHANNEL', '-1002831115957')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002558348052')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', 0))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002831115957')
@@ -66,11 +66,11 @@ PORT = os.environ.get('PORT', '5000')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 DELETE_TIME = int(environ.get('DELETE_TIME', 300))
-IMDB = is_enabled('IMDB', False)
+IMDB = is_enabled('IMDB', True)
 FILE_CAPTION = environ.get('FILE_CAPTION', f'{script.FILE_CAPTION}')
 IMDB_TEMPLATE = environ.get('IMDB_TEMPLATE', f'{script.IMDB_TEMPLATE_TXT}')
-LONG_IMDB_DESCRIPTION = is_enabled('LONG_IMDB_DESCRIPTION', False)
-PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
+LONG_IMDB_DESCRIPTION = is_enabled('LONG_IMDB_DESCRIPTION', True)
+PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', True)
 SPELL_CHECK = is_enabled('SPELL_CHECK', True)
 LINK_MODE = is_enabled('LINK_MODE', True)
 SETTINGS = {
@@ -98,6 +98,7 @@ DEFAULT_POST_MODE = {
     'singel_post_mode' : False,
     'all_files_post_mode' : False
 }
+
 
 
 
