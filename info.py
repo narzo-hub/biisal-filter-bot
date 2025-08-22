@@ -29,8 +29,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', 0))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/4dad0cc16f190468454ee.jpg')
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL',''))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS',''))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL',0))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS',0))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
@@ -56,7 +56,7 @@ PREMIUM_POINT = 1500
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
-request_channel = environ.get('REQUEST_CHANNEL', '')
+request_channel = environ.get('REQUEST_CHANNEL', '-1002831115957')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', ''))
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))
@@ -98,5 +98,6 @@ DEFAULT_POST_MODE = {
     'singel_post_mode' : False,
     'all_files_post_mode' : False
 }
+
 
 
