@@ -13,9 +13,9 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '21551509'))
-API_HASH = environ.get('API_HASH', 'cb3d60057fce5975e57b08a50cf57ed3')
-BOT_TOKEN = environ.get('BOT_TOKEN', '8286349224:AAFTiyfmo3udUoCTlElwgVw3YZfY14Ufwrc')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7123837674').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/BruceJaat")
@@ -98,6 +98,7 @@ DEFAULT_POST_MODE = {
     'singel_post_mode' : False,
     'all_files_post_mode' : False
 }
+
 
 
 
